@@ -77,6 +77,12 @@
           SSH:
       %td
         = link_to @project.ssh_url_to_repo
+  	%tr
+      %td
+        %b
+          Git Read-Only:
+      %td
+        = link_to @project.gitd_url_to_repo
 
 - if @repository
   %table.zebra-striped

@@ -166,4 +166,8 @@ class Repository
 
     file_path
   end
+
+  def gitd_url_to_repo
+    gitd_url = url_to_repo.gsub(/^.+@/,'git://')
+  end
 end
